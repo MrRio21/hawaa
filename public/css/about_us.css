@@ -1,0 +1,496 @@
+/*======== Variables =========*/
+
+
+:root {
+    --hue: 297;
+    --sat: 73%;
+    --lig: 24%;
+    --first-clr: hsl(var(--hue), var(--sat), var(--lig));
+    --first-clr-alt: hsla(var(--hue), var(--sat), var(--lig), .8);
+}
+
+/*======== Global Styles =========*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body{
+margin: 0 ;
+font-family: sans-serif;
+overflow-x: hidden;
+/* height: 170rem; */
+
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*======== Header =========*/
+
+
+header{
+    color: white;
+    background-color: var(--first-clr-alt);
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width :1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    /* border: 2px solid blue; */
+}
+
+.header__container h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    /* border: 2px solid red; */
+
+
+}
+.nav a{
+    text-decoration: none;
+    color:  white;
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+
+}
+.nav i {
+    font-size: 1.4rem;
+}
+.nav a:hover{
+background-color: white;
+color: var(--first-clr);
+}
+
+/*======== photo =========*/
+
+
+.about__us{
+ background-image: url("https://i.insider.com/5cb5ea3faefeef32ca70ce74?width=1200&format=jpeg");
+    height: 100vh;
+    /* width: 100%; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+
+
+}
+.about__us__container {
+    display: flex;
+    align-items: center;
+
+    /* max-width: 918px; */
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 100vh;
+}
+
+.about__us h1{
+    position:relative;
+    top: 15rem;
+    left: 5rem;
+    font-size: 44px;
+    border: 5px solid white;
+    padding: 2rem;
+    background-color: var(--first-clr-alt);
+    color:white;
+    font-family: sans-serif;
+
+}
+
+
+/*======== icons =========*/
+
+.media_icons{
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.media_icons a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:10px ;
+    font-size: 25px;
+    font-family: 'Oswald', Sans-serif;
+    font-weight: bold;
+    margin:2px 0px 2px 0px;
+    text-align: right;
+    border-radius: 0 50px 50px 0;
+    transform: translate(-190px , 0px);
+    transition: all 1s;
+
+}
+
+.media_icons a:hover{
+    transform: translate( 0px , 0px );
+}
+
+.media_icons a i{
+    margin-left: 15px;
+    background-color: white;
+    /* color: black; */
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+
+
+.media_icons a i.bxl-facebook{
+    color:#3742fa ;
+}
+
+.media_icons a i.bxl-youtube{
+    color: #EA2027;
+}
+.media_icons a i.bxl-twitter{
+    color: #70a1ff;
+}
+.media_icons a i.bxl-instagram{
+    color:#bc1888;
+}
+
+
+
+
+.facebook{
+    background-color: #3742fa;
+    color: white;
+}
+.youtube{
+    background-color: #EA2027;
+    color: white;
+}
+.twitter{
+    background-color: #70a1ff;
+    color: white;
+}
+.instagram{
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+
+    color: white;
+}
+
+
+
+
+
+
+/*======== vision =========*/
+
+.vision{
+    /* border: 2px solid red; */
+    max-width: 1100px;
+    margin: 2rem 2rem 0;
+    padding: 1rem;
+}
+
+.vision p{
+    padding: 2rem 3rem 0;
+}
+
+
+/* =============== Sustainability ================ */
+
+.Sustainability {
+    background-color:white;
+    /* padding: 20px 0; */
+}
+.Sustainability__content {
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    flex-wrap:wrap;
+    margin: 0rem auto;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+}
+
+.Sustainability__img{
+    width: 500px;
+    /* border: 2px solid red;        */
+
+}
+
+
+.Sustainability__text{
+    /* border: 5px solid red; */
+    width: 500px;
+    font-size: 22px;
+}
+
+.Sustainability__text h1{
+    border-bottom: 1px solid black;
+}
+
+
+
+/* =============== our team ================ */
+
+.team {
+    text-align: center;
+    /* margin: 6rem 0 3rem; */
+    background-color:var(--first-clr-alt);
+    padding: 1rem 0.5rem;
+    color: white;
+    font-size: 20px;
+    }
+
+    .our_team{
+        font-family:cursive;
+        font-size: 22px;
+        margin-bottom: 3rem;
+    }
+
+    .our_team p{
+        font-weight: bold;
+    }
+
+    .avatar{
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        object-position: center;
+        object-fit: cover;
+
+    }
+    .Younes .avatar,.Rio .avatar {
+        object-position: top;
+    }
+
+
+    h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .employees{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        font-family: 'Bebas Neue', cursive;
+    }
+
+
+
+       /* =============== go to up ================ */
+
+.goup{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+
+
+  /* =============== footer ================ */
+
+  footer{
+    /* margin-top: 3rem; */
+    background-color: var(--first-clr);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Up & Down Section */
+.f__logo{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    font-size: 35px;
+    align-self: flex-start;
+}
+
+.up__section{border-bottom: 1px solid #fff;}
+
+.up__section, .down__section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0;
+    margin: 5px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.up__section   ul,
+.down__section ul
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0 15px;
+}
+.up__section   ul li,
+.down__section ul li {
+    padding: .5rem 0;
+
+}
+.up__section   h1,
+.down__section h1
+{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.up__section   ul a,
+.down__section ul a
+{
+    font-size: 14px;
+    color: rgb(167, 150, 150);
+    transition: .3s;
+
+}
+
+.up__section   ul a:hover,
+.down__section ul a:hover
+{
+    color: white;
+    /* text-decoration:; */
+
+}
+
+
+.down__section ul p{
+    font-size: 13px;
+    color: #ddd;
+    margin: 0;
+}
+
+
+.social__icons{display: flex;}
+
+.social__icons a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--first-clr);
+    transition: .3s;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.social__icons a:hover{
+background-color:var(--first-clr-alt);
+color: white;
+}
+
+.search input{
+    height: 35px;
+    width: 160px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid hsl(var(--hue), var(--sat), 15%)
+}
+
+.copyright{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+@media (max-width: 1024px){
+    .search{
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .search h1{margin: 15px;}
+}
+
+@media (max-width: 720px){
+    .f__logo{
+        font-size: 30px;
+        align-self: center;
+        border: 1px solid #545562;
+    }
+
+    .up__section,
+    .down__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .up__section   ul h1,
+    .down__section ul h1,
+    .social h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .up__section   ul li,
+    .down__section ul li{
+        text-align: center;
+        margin: 10px;
+    }
+}

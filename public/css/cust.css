@@ -1,0 +1,386 @@
+/*========
+Variables
+=========*/
+:root {
+    --hue: 297;
+    --sat: 73%;
+    --lig: 24%;
+    --first-clr: hsl(var(--hue), var(--sat), var(--lig));
+    --first-clr-alt: hsla(var(--hue), var(--sat), var(--lig), .5)
+  }
+
+  /*========
+  Global Styles
+  =========*/
+  * {
+    box-sizing: border-box;
+  }
+
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  input {
+    border: none;
+    outline: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*========
+  Header
+  =========*/
+  header {
+    color: white;
+    background-color: var(--first-clr-alt);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    /* border: 2px solid blue; */
+  }
+
+  .header__container h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    /* border: 2px solid red; */
+
+
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+
+  }
+
+  .nav i {
+    font-size: 1.4rem;
+  }
+
+  .nav a:hover {
+    background-color: white;
+    color: var(--first-clr);
+  }
+
+  /*========
+  Main
+  =========*/
+  main {
+
+    background-image: url("https://heidiblondin.com/wp-content/uploads/2016/02/driver_Seat.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+  }
+
+  .customer{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    /* border: 3px solid red; */
+    padding: 8rem 0 2rem;
+
+
+  }
+
+
+  .customer__info{
+    /* border: 2px solid red; */
+      
+    background-color: var(--first-clr);
+    padding: 1rem 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    font-size: 20px ;
+  
+
+
+  }
+
+
+
+
+  .customer__info p{
+    padding: 1rem;
+  }
+
+  .customer p a{
+    color: var(--first-clr);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  .customer__info h4{
+    padding: 0.2rem;
+  }
+
+  .customer__info i{
+    font-size: 25px;
+  }
+
+
+
+  hr{
+    margin: 0 1rem;
+  }
+
+  .customer__img{
+    text-align: center;
+
+}
+
+.customer__img img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+  }
+
+
+
+
+  .customer__order{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 3;
+    padding: 1rem 0;
+    background-color: var(--first-clr-alt);
+    border: 1px solid var(--first-clr);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+  }
+
+
+
+
+  .customer__trips{
+    border-radius: 20px;
+    line-height: 2rem;
+    margin: 1rem ;
+    background-color: rgba(255, 255, 255, 0.973);
+    color: var(--first-clr);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .customer__trips h2{
+    font-size: 22px;
+    text-align: center;
+
+  }
+
+
+
+
+
+
+  /* ===============
+  footer
+  ================ */
+
+  footer {
+    /* margin-top: 3rem; */
+    background-color: var(--first-clr);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  /* Up & Down Section */
+  .f__logo {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    font-size: 45px;
+    align-self: flex-start;
+  }
+
+  .up__section {
+    border-bottom: 1px solid #fff;
+  }
+
+  .up__section,
+  .down__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3% 0;
+    margin: 5px;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
+  .up__section ul,
+  .down__section ul {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .up__section ul li,
+  .down__section ul li {
+    padding: .5rem 0;
+
+  }
+
+  .up__section h1,
+  .down__section h1 {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .up__section ul a,
+  .down__section ul a {
+    font-size: 18px;
+    color: rgb(167, 150, 150);
+    transition: .3s;
+
+  }
+
+  .up__section ul a:hover,
+  .down__section ul a:hover {
+    color: white;
+    /* text-decoration:; */
+
+  }
+
+
+  .down__section ul p {
+    font-size: 16px;
+    color: #ddd;
+    margin: 0;
+  }
+
+
+  .social__icons {
+    display: flex;
+  }
+
+  .social__icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--first-clr);
+    transition: .3s;
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  .social__icons a:hover {
+    background-color: var(--first-clr-alt);
+    color: white;
+
+  }
+
+  .search input {
+    height: 35px;
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+  }
+
+  .copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #b3b3b3;
+  }
+
+  @media (max-width: 1024px) {
+    .search {
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .search h1 {
+      margin: 20px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .f__logo {
+      font-size: 35px;
+      align-self: center;
+      border: 1px solid #545562;
+    }
+
+    .up__section,
+    .down__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .up__section ul h1,
+    .down__section ul h1,
+    .social h1 {
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .up__section ul li,
+    .down__section ul li {
+      text-align: center;
+      margin: 10px;
+    }
+  }
