@@ -15,10 +15,10 @@ use App\Http\Controllers\myController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/home',[mycontroller::class,'home'])->name('home');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/',[mycontroller::class,'home'])->name('home');
 Route::get('/team',[mycontroller::class,'team'])->name('team');
 Route::get('/history',[mycontroller::class,'history'])->name('history');
 Route::get('/myorder',[mycontroller::class,'myorder'])->name('myorder');
@@ -62,4 +62,4 @@ Route::get('/driver_req',[mycontroller::class,'driver_req'])->name('driver_req')
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/Home', [App\Http\Controllers\HomeController::class, 'index'])->name('Home');

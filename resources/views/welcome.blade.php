@@ -33,6 +33,8 @@
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
                         @endif
                     @endauth
+                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li><a href="{{route('sing_up')}}">sing up</a></li>
                 </div>
             @endif
 

@@ -1,5 +1,5 @@
 
-<!-- 
+<!--
 @extends('template')
 @section('test')
  -->
@@ -20,7 +20,7 @@
 <body>
 
   <main>
-   
+
           <div class="driver">
 
                 <div class="driver__info">
